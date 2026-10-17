@@ -12,7 +12,7 @@ tags:
     "Tailscale",
     "Bash",
   ]
-github: "https://github.com/gvilalobos/homelab-infra"
+//github: "https://github.com/gvilalobos/homelab-infra"
 order: 1
 ---
 
