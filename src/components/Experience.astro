@@ -1,0 +1,59 @@
+---
+const timeline = [
+  {
+    type: "Experiência Profissional",
+    role: "Estágio em Redes e Infraestrutura",
+    organization: "OneSource",
+    period: "Experiência Prática",
+    description: "Configuração, administração e manutenção de equipamentos de rede. Implementação e segmentação de redes através de VLANs e configuração direta de switches empresariais Cisco e Aruba."
+  },
+  {
+    type: "Formação Académica",
+    role: "Licenciatura em Engenharia Informática",
+    organization: "ISEC - Instituto Superior de Engenharia de Coimbra",
+    period: "Ramo: Redes e Administração de Sistemas",
+    description: "Especialização em arquiteturas de redes, administração avançada de sistemas operativos, segurança informática, serviços de rede e infraestrutura distribuída."
+  },
+  {
+    type: "Formação Académica",
+    role: "CTeSP em Redes e Sistemas Informáticos",
+    organization: "Ensino Superior Profissional",
+    period: "Concluído",
+    description: "Forte base prática em encaminhamento, comutação, administração de sistemas clientes e servidores, e implementação de infraestruturas de TI."
+  }
+];
+---
+
+<section id="experiencia" class="py-16 scroll-mt-16">
+  <div class="flex items-center gap-3 mb-8">
+    <h2 class="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+      Experiência & Formação
+    </h2>
+    <div class="h-px flex-1 bg-zinc-200 dark:bg-zinc-800"></div>
+  </div>
+
+  <div class="relative border-l border-zinc-200 dark:border-zinc-800 ml-3 space-y-10">
+    {timeline.map((item) => (
+      <div class="relative pl-8">
+        <span class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full border-2 border-zinc-50 dark:border-zinc-950 bg-zinc-400 dark:bg-zinc-600"></span>
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+          <span class="text-xs font-mono uppercase tracking-wider text-emerald-600 dark:text-emerald-400 font-medium">
+            {item.type}
+          </span>
+          <span class="text-xs font-mono text-zinc-500 dark:text-zinc-400">
+            {item.period}
+          </span>
+        </div>
+
+        <h3 class="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {item.role} <span class="text-zinc-500 dark:text-zinc-400 font-normal">@ {item.organization}</span>
+        </h3>
+
+        <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+          {item.description}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
