@@ -12,7 +12,7 @@ const {
 } = Astro.props;
 
 // Gera o URL absoluto para a pré-visualização em redes sociais (LinkedIn, Discord, etc.)
-const ogImageUrl = new URL(`${import.meta.env.BASE_URL}perfil.jpg`, Astro.site).toString();
+const ogImageUrl = new URL(`${import.meta.env.BASE_URL}/perfil.jpg`, Astro.site).toString();
 ---
 
 <!doctype html>
@@ -34,7 +34,7 @@ const ogImageUrl = new URL(`${import.meta.env.BASE_URL}perfil.jpg`, Astro.site).
     <meta property="og:image" content={ogImageUrl} />
 
     <!-- Favicon corrigido com a base URL -->
-    <link rel="icon" type="image/png" href={`${import.meta.env.BASE_URL}GV.png`} />
+    <link rel="icon" type="image/png" href={`${import.meta.env.BASE_URL}/GV.png`} />
 
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
