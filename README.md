@@ -2,7 +2,7 @@
 
 Website pessoal e portefólio profissional focado em Engenharia de Redes, Administração de Sistemas e Desenvolvimento de Software. Desenvolvido com arquitetura moderna orientada a performance, acessibilidade e geração estática (SSG).
 
-🌐 **Live Demo:** [https://gvilalobos.github.io/omeuportefoliogv/](https://gvilalobos.github.io/omeuportefoliogv/)
+🌐 **Live Demo:** (https://gvilalobos.github.io/meu-portfolioGV/)
 
 ---
 
