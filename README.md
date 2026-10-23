@@ -1,43 +1,34 @@
-# Astro Starter Kit: Minimal
+# Portefólio Técnico — Gabriel Vilalobos
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Website pessoal e portefólio profissional focado em Engenharia de Redes, Administração de Sistemas e Desenvolvimento de Software. Desenvolvido com arquitetura moderna orientada a performance, acessibilidade e geração estática (SSG).
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+🌐 **Live Demo:** [https://gvilalobos.github.io/omeuportefoliogv/](https://gvilalobos.github.io/omeuportefoliogv/)
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🛠️ Tecnologias Utilizadas
+
+- **Framework:** [Astro](https://astro.build/) (Static Site Generation / Content Collections)
+- **Estilização:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Linguagem:** TypeScript / HTML5 Semântico
+- **Fontes:** Inter & JetBrains Mono
+- **Deploy & CI/CD:** GitHub Actions & GitHub Pages
+- **Ambiente de Desenvolvimento:** Pop!_OS Linux / Node.js 22
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```text
-/
-├── public/
+meu-portfolio/
+├── .github/workflows/       # Pipeline de CI/CD (GitHub Actions)
+├── public/                  # Ficheiros estáticos (CV em PDF, Favicon, imagens)
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+│   ├── components/          # Componentes modulares (Navbar, Hero, Skills, etc.)
+│   ├── content/
+│   │   └── projects/        # Conteúdo dos projetos estruturado em Markdown
+│   ├── layouts/             # Layout base, metadados (SEO/OpenGraph) e tema
+│   ├── pages/               # Ponto de entrada (index.astro)
+│   └── styles/              # Configuração global de estilos Tailwind
+├── astro.config.mjs         # Configuração de build e caminhos do Astro
+└── tsconfig.json            # Configuração de TypeScript
